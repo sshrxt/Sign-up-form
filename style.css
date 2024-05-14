@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    border: solid 2px red;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.left-container {
+    border: solid 2px purple;
+    width: 40%;
+    background-image: url(sparkle-65.gif);
+    background-color: rgb(84, 59, 92);
+}
+
+.right-container {
+    border: solid 2px blue;
+    width: 60%;
+}
