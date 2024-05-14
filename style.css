@@ -21,7 +21,7 @@ body {
     border-radius: 20px;
     height: 16vh;
     position: relative; 
-    top: 130px;
+    top: 210px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,12 +53,17 @@ body {
 .text-container {
     height: 27vh;
     width: 45vw;
-    margin-top: 26px;
-    font-size: 2.4rem;
+    margin-top: 20px;
+    font-size: 2.2rem;
     font-family: "Caveat";
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: auto;
+}
+
+.text-container::-webkit-scrollbar {
+    width: 0px;
 }
 
 .sign-up-container {
@@ -81,7 +86,7 @@ body {
 }
 
 .sign-up-container h1 {
-    font-size: 2rem;
+    font-size: 2.4rem;
 }
 
 #sign-up {
@@ -130,8 +135,9 @@ body {
     padding: 1.3rem;
     border-radius: 15px;
     position: relative;
-    bottom: 29px;
+    bottom: 10px;
     border: none;
+    color: black;
 }
 
 .submit:hover{
