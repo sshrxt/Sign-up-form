@@ -29,42 +29,46 @@
         </p>
       </div>
       <div class="sign-up-container">
+        <h1>Lets do this!</h1>
         <form id="sign-up" action="" method="post">
-            <h1>Lets do this!</h1>
             <div class="name-container">
                 <div class="first-name-container">
                     <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" class="first-name" name="user-first-name">
+                    <input type="text" id="first-name" class="first-name" name="user-first-name" required>
                 </div>
                 <div class="last-name-container">
                     <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" class="last-name" name="user-last-name">
+                    <input type="text" id="last-name" class="last-name" name="user-last-name"  required>
                 </div>
             </div>
             <div class="email-number-container">
                 <div class="email-container">
                     <label for="email">Email</label>
-                    <input type="text" id="email" class="email" name="user-email">
+                    <input type="email" id="email" class="email" name="user-email" required>
                 </div>
                 <div class="number-container">
                     <label for="number">Number</label>
-                    <input type="text" id="number" class="number" name="user-number">
+                    <input type="tel" id="number" class="number" name="user-number" required>
                 </div>
             </div>
             <div class="password-container">
                 <div class="first-pass-container">
                     <label for="password">Password</label>
-                    <input type="text" id="password" class="password" name="user-password">
+                    <input type="password" id="password" class="password" name="user-password" minlength="8" required>
                 </div>
                 <div class="confirm-pass-container">
                     <label for="confirm">Confirm Password</label>
-                    <input type="text" id="confirm" class="confirm" name="user-confirmed-password">
+                    <input type="password" id="confirm" class="confirm" name="user-confirmed-password" minlength="8" required>
                 </div>
             </div>
         </form>
         
       </div>
-      <div class="account-container"></div>
+      <div class="account-container">
+        <div class="buttons">
+            <input class="submit" value="Create Account" type="submit" id="submit-form" form="sign-up"/>
+        </div>
+      </div>
     </div>
   </body>
 </html>
