@@ -17,7 +17,33 @@ body {
     background-color: rgb(84, 59, 92);
 }
 
+.content-container {
+    border: solid 2px orange;
+    border-radius: 20px;
+    height: 16vh;
+    position: relative; 
+    top: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(42, 67, 206, 0.3);
+}
+.content-container h1{
+    font-size: clamp(2rem, -1.5rem + 8vw, 4rem);
+    font-family: "Caveat";
+    color: white;
+    opacity: 90%;
+}
+
+.content-container img {
+    height: 15vh;
+    position: relative;
+    right: 10px
+}
+
 .right-container {
     border: solid 2px blue;
     width: 60%;
+    background-color: rgba(42, 67, 206, 0.3);
 }
+
