@@ -34,11 +34,11 @@
             <div class="name-container">
                 <div class="first-name-container">
                     <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" class="first-name" name="user-first-name" required>
+                    <input type="text" id="first-name" class="first-name" name="user-first-name" pattern="[A-Za-z]{1,20}" placeholder="Shrut" required>
                 </div>
                 <div class="last-name-container">
                     <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" class="last-name" name="user-last-name"  required>
+                    <input type="text" id="last-name" class="last-name" name="user-last-name" pattern="[A-Za-z]{1,20}" placeholder="Patel" required>
                 </div>
             </div>
             <div class="email-number-container">
@@ -48,20 +48,20 @@
                 </div>
                 <div class="number-container">
                     <label for="number">Number</label>
-                    <input type="tel" id="number" class="number" name="user-number" required>
+                    <input type="tel" id="number" class="number" name="user-number" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" placeholder="000-000-0000" required>
                 </div>
             </div>
             <div class="password-container">
                 <div class="first-pass-container">
                     <label for="password">Password</label>
-                    <input type="password" id="password" class="password" name="user-password" minlength="8" required>
+                    <input type="password" id="password" class="password" name="user-password" minlength="8" pattern="(?=.*[A-Z])(?=.*[!@#$%^&*()_+])[A-Za-z0-9!@#$%^&*()_+]{8,}" required>
                 </div>
                 <div class="confirm-pass-container">
                     <label for="confirm">Confirm Password</label>
-                    <input type="password" id="confirm" class="confirm" name="user-confirmed-password" minlength="8" required>
+                    <input type="password" id="confirm" class="confirm" name="user-confirmed-password" minlength="8" pattern="(?=.*[A-Z])(?=.*[!@#$%^&*()_+])[A-Za-z0-9!@#$%^&*()_+]{8,}" required>
                 </div>
             </div>
-        </form>
+        </form>x
         
       </div>
       <div class="account-container">
