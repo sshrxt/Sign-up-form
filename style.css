@@ -13,7 +13,7 @@ body {
 
 .left-container {
     width: 40%;
-    background-image: url(sparkle-65.gif);
+    background-image: url(./imgs/sparkle-65.gif);
     background-color: rgb(33, 17, 39);
 }
 
@@ -43,7 +43,7 @@ body {
 .right-container {
     width: 60%;
     background-color: rgb(13, 13, 95);
-    background-image: url(sparkle-65.gif);
+    background-image: url(./imgs/sparkle-65.gif);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,6 +129,8 @@ body {
 .buttons input{
     padding: 1.3rem;
     border-radius: 15px;
+    position: relative;
+    bottom: 29px;
     border: none;
 }
 
@@ -138,3 +140,22 @@ body {
     background-color: rgb(45, 45, 87);
     color: aliceblue;
 }
+
+.buttons {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons > div {
+    font-size: 1.9rem;
+    color: aliceblue;
+}
+
+a {
+    color: lightskyblue;
+    text-decoration: none;
+}
+
